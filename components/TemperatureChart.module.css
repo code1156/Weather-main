@@ -1,0 +1,42 @@
+.chartContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the charts */
+  width: 100%; /* Full width */
+  margin-top: 20px;
+}
+
+.chart {
+  width: 100%; /* Full width */
+  height: 400px; /* Default height for larger screens */
+  max-width: 800px; /* Optional max width for larger screens */
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+  .chart {
+    max-width: 700px; /* Adjust max width for medium screens */
+    height: 350px; /* Adjust height for medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .chart {
+    max-width: 600px; /* Adjust max width for smaller screens */
+    height: 300px; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .chart {
+    max-width: 100%; /* Full width for tablets */
+    height: 250px; /* Adjust height for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .chart {
+    max-width: 100%; /* Full width for mobile devices */
+    height: 200px; /* Adjust height for mobile devices */
+  }
+}

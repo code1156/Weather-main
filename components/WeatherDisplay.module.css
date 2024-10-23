@@ -1,0 +1,158 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center items vertically */
+  padding: 20px;
+  background-color: #f0f8ff; /* Light blue background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  min-height: 100vh; /* Full height for centering */
+  position: relative; /* Position relative for absolute positioning of the settings button */
+  width: 100%; /* Full width for responsiveness */
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center; /* Center the title */
+}
+
+.toggleButton, .settingsButton, .summaryButton {
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s;
+  margin-bottom: 20px;
+}
+
+.toggleButton {
+  background-color: #4caf50; /* Green background */
+}
+
+.toggleButton:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.settingsButton {
+  position: absolute; /* Position the button absolutely */
+  top: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+}
+
+.settingsButton:hover {
+  background-color: #0056b3;
+}
+
+.summaryButton {
+  background-color: #ff9800;
+  margin-top: 20px;
+}
+
+.summaryButton:hover {
+  background-color: #e68900;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between cards */
+  width: 100%;
+  max-width: 1200px; /* Constrain the max width for large screens */
+  margin: 0 auto; /* Center the grid */
+}
+
+.weatherCard {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  cursor: pointer;
+  text-align: center;
+}
+
+.weatherCard:hover {
+  transform: translateY(-5px);
+}
+
+.cityName {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.mainCondition, .temp, .feelsLike {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.temp {
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.feelsLike {
+  font-size: 1rem;
+  color: #999;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .toggleButton, .settingsButton, .summaryButton {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .cardsContainer {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Reduce the card size for smaller screens */
+  }
+
+  .weatherCard {
+    padding: 10px;
+  }
+
+  .cityName {
+    font-size: 1.3rem;
+  }
+
+  .temp, .feelsLike {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .toggleButton, .settingsButton, .summaryButton {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+
+  .cardsContainer {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Further reduce the card size for small screens */
+  }
+
+  .weatherCard {
+    padding: 8px;
+  }
+
+  .cityName {
+    font-size: 1.1rem;
+  }
+
+  .temp, .feelsLike {
+    font-size: 0.9rem;
+  }
+}

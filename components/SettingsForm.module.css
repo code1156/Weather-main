@@ -1,0 +1,64 @@
+/* SettingsForm.module.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f0f8ff; /* Light blue background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Set a maximum width for the form */
+    margin: 0 auto; /* Center the form horizontally */
+    height: 100vh;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .form {
+    width: 100%; /* Full width for the form */
+  }
+  
+  .formGroup {
+    margin-bottom: 15px; /* Space between form groups */
+  }
+  
+  .label {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .input {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .input:focus {
+    border-color: #4caf50; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  .submitButton {
+    background-color: #4caf50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Full width for the button */
+  }
+  
+  .submitButton:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  

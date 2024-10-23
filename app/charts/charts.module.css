@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center content vertically */
+  padding: 20px;
+  background-color: #e6f7ff; /* Light blue background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin: 0 auto; /* Center container */
+  height: 100vh; /* Full height of the viewport */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Full width for header */
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  color: #333;
+}
+
+.toggleButton {
+  background-color: #4caf50; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggleButton:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.loading {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.selectContainer {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%; /* Full width for select container */
+}
+
+.label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.citySelect {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  width: 100%; /* Full width for select */
+  max-width: 300px; /* Limit width */
+  transition: border 0.3s;
+}
+
+.citySelect:hover,
+.citySelect:focus {
+  border-color: #4caf50; /* Change border color on hover/focus */
+}
+
+.citySelect option {
+  color: #333; /* Dark text for options */
+}
